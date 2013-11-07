@@ -4,6 +4,7 @@ use Components\Import\LocalStorage;
 use Components\Validators\Import\Freshbooks as FreshbooksValidator;
 use Components\Import\Strategies\Freshbooks as FreshbooksStrategy;
 use Components\Import\Exceptions\FreshbooksPullingError;
+use Models\Users;
 
 class ImportController extends Controller
 {
@@ -62,6 +63,13 @@ class ImportController extends Controller
 		{
 			return $this->ajaxError(array($ex->getMessage()));	
 		}
+		
+		$users_model = new Users();
+		
+		$users_model->updateById(\Yii::app()->user->id, array(
+			'freshbooks_token' => $_POST['token'],
+			'freshbooks_domain' => $_POST['domain']
+		));
 		
 		$this->ajaxSuccess();
 	}

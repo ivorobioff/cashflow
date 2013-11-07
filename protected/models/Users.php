@@ -13,4 +13,22 @@ class Users extends Base
 			->andWhere('password=:password', array(':password' => md5($password)))
 			->queryRow(true);
 	}
+	
+	public function getById($id)
+	{
+		return $this->_createQuery()
+			->from('users')
+			->where('id=:id', array(':id' => $id))
+			->queryRow(true);
+	}
+	
+	public function updateById($id, $data)
+	{
+		$this->_createQuery()->update('users', $data, 'id=:id', array(':id' => $id));
+	}
+	
+	public function hasData($id)
+	{
+		
+	}
 }
