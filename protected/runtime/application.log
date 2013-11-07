@@ -1,0 +1,1137 @@
+2013/11/05 01:43:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('asd')
+#1 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/asd
+---
+2013/11/05 01:43:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('asd')
+#1 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/asd
+---
+2013/11/05 01:52:42 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//contents/index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('//contents/inde...', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('//contents/inde...')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:53:11 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:53:12 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:53:27 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/contents/index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('/contents/index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('/contents/index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:53:52 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:53:53 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:54:46 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:55:25 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:55:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 01:55:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 02:02:30 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 02:04:49 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/DefaultController.php(11): CController->render('index')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/11/05 02:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfs".' in /var/www/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('dfs')
+#1 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/dfs
+---
+2013/11/05 02:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "budgets".' in /var/www/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('budgets')
+#1 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/budgets
+HTTP_REFERER=http://cashflow.dev/sales
+---
+2013/11/05 02:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "budgets".' in /var/www/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('budgets')
+#1 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/budgets
+HTTP_REFERER=http://cashflow.dev/sales
+---
+2013/11/05 02:23:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "budgets".' in /var/www/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('budgets')
+#1 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/budgets
+HTTP_REFERER=http://cashflow.dev/sales
+---
+2013/11/05 02:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(270): CController->missingAction('')
+#1 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2013/11/05 22:41:15 [error] [php] include(Config.php): failed to open stream: No such file or directory (/var/www/yii-framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/globals.php(61): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#2 /var/www/yii-framework/web/CBaseController.php(126): require()
+#3 /var/www/yii-framework/web/CBaseController.php(95): CashflowController->renderInternal()
+#4 /var/www/yii-framework/web/CController.php(784): CashflowController->renderFile()
+#5 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CashflowController->render()
+#6 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#7 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/yii-framework/web/CController.php(286): CashflowController->runAction()
+#9 /var/www/yii-framework/web/CController.php(265): CashflowController->runActionWithFilters()
+#10 /var/www/yii-framework/web/CWebApplication.php(282): CashflowController->run()
+#11 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/cashflow
+in /var/www/cashflow.dev/protected/globals.php (61)
+in /var/www/cashflow.dev/protected/views/layouts/main.php (16)
+in /var/www/cashflow.dev/protected/controllers/CashflowController.php (8)
+2013/11/05 22:44:44 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(66): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 22:45:07 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(65): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 22:45:08 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(65): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 22:45:41 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(65): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 22:45:49 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(65): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:05:22 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(65): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:28:22 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(66): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:29:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.js_composer" is not defined.' in /var/www/yii-framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(105): CComponent->__get('js_composer')
+#1 /var/www/cashflow.dev/protected/globals.php(66): CModule->__get('js_composer')
+#2 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#3 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#4 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#5 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#6 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#7 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#8 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#13 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:29:56 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.js_composer" is not defined.' in /var/www/yii-framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(105): CComponent->__get('js_composer')
+#1 /var/www/cashflow.dev/protected/globals.php(66): CModule->__get('js_composer')
+#2 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#3 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#4 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#5 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#6 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#7 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#8 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#13 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:29:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.js_composer" is not defined.' in /var/www/yii-framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(105): CComponent->__get('js_composer')
+#1 /var/www/cashflow.dev/protected/globals.php(66): CModule->__get('js_composer')
+#2 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#3 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#4 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#5 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#6 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#7 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#8 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#13 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:30:29 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.js_composer" is not defined.' in /var/www/yii-framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(105): CComponent->__get('js_composer')
+#1 /var/www/cashflow.dev/protected/globals.php(66): CModule->__get('js_composer')
+#2 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#3 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#4 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#5 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#6 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#7 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#8 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#13 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:31:04 [error] [exception.Components\JsComposer\Exceptions\NoStart] exception 'Components\JsComposer\Exceptions\NoStart' in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php:35
+Stack trace:
+#0 /var/www/cashflow.dev/protected/globals.php(73): Components\JsComposer\JsComposer->process()
+#1 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#2 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#3 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#4 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#5 /var/www/cashflow.dev/protected/controllers/CashflowController.php(8): CController->render('//contents/cash...')
+#6 /var/www/yii-framework/web/actions/CInlineAction.php(49): CashflowController->actionIndex()
+#7 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('cashflow')
+#12 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#14 {main}
+REQUEST_URI=/cashflow
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/05 23:44:46 [error] [exception.CException] exception 'CException' with message 'Components\JsComposer\JsComposer and its behaviors do not have a method or closure named "init".' in /var/www/yii-framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(387): CComponent->__call('init', Array)
+#1 /var/www/yii-framework/base/CModule.php(387): Components\JsComposer\JsComposer->init()
+#2 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#3 /var/www/cashflow.dev/protected/globals.php(68): CModule->__get('js_composer')
+#4 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#5 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#6 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#7 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#8 /var/www/cashflow.dev/protected/controllers/DashboardController.php(8): CController->render('//contents/dash...')
+#9 /var/www/yii-framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#10 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('dashboard')
+#15 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/dashboard
+HTTP_REFERER=http://cashflow.dev/cashflow
+---
+2013/11/05 23:45:24 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii-framework/YiiBase.php:193
+Stack trace:
+#0 /var/www/yii-framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#1 /var/www/yii-framework/base/CModule.php(103): CModule->getComponent('js_composer')
+#2 /var/www/cashflow.dev/protected/globals.php(68): CModule->__get('js_composer')
+#3 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#4 /var/www/yii-framework/web/CBaseController.php(126): require('/var/www/cashfl...')
+#5 /var/www/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cashfl...', Array, true)
+#6 /var/www/yii-framework/web/CController.php(784): CBaseController->renderFile('/var/www/cashfl...', Array, true)
+#7 /var/www/cashflow.dev/protected/controllers/DashboardController.php(8): CController->render('//contents/dash...')
+#8 /var/www/yii-framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#9 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('dashboard')
+#14 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/dashboard
+HTTP_REFERER=http://cashflow.dev/cashflow
+---
+2013/11/05 23:56:14 [error] [php] Undefined index: app_path (/var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php:72)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#1 /var/www/yii-framework/web/CBaseController.php(126): require()
+#2 /var/www/yii-framework/web/CBaseController.php(95): DashboardController->renderInternal()
+#3 /var/www/yii-framework/web/CController.php(784): DashboardController->renderFile()
+#4 /var/www/cashflow.dev/protected/controllers/DashboardController.php(8): DashboardController->render()
+#5 /var/www/yii-framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#6 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii-framework/web/CController.php(286): DashboardController->runAction()
+#8 /var/www/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#9 /var/www/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#10 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (72)
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (40)
+in /var/www/cashflow.dev/protected/globals.php (74)
+2013/11/05 23:56:15 [error] [php] Undefined index: app_path (/var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php:72)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#1 /var/www/yii-framework/web/CBaseController.php(126): require()
+#2 /var/www/yii-framework/web/CBaseController.php(95): DashboardController->renderInternal()
+#3 /var/www/yii-framework/web/CController.php(784): DashboardController->renderFile()
+#4 /var/www/cashflow.dev/protected/controllers/DashboardController.php(8): DashboardController->render()
+#5 /var/www/yii-framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#6 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii-framework/web/CController.php(286): DashboardController->runAction()
+#8 /var/www/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#9 /var/www/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#10 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (72)
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (40)
+in /var/www/cashflow.dev/protected/globals.php (74)
+2013/11/05 23:56:16 [error] [php] Undefined index: app_path (/var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php:72)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#1 /var/www/yii-framework/web/CBaseController.php(126): require()
+#2 /var/www/yii-framework/web/CBaseController.php(95): DashboardController->renderInternal()
+#3 /var/www/yii-framework/web/CController.php(784): DashboardController->renderFile()
+#4 /var/www/cashflow.dev/protected/controllers/DashboardController.php(8): DashboardController->render()
+#5 /var/www/yii-framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#6 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii-framework/web/CController.php(286): DashboardController->runAction()
+#8 /var/www/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#9 /var/www/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#10 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (72)
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (40)
+in /var/www/cashflow.dev/protected/globals.php (74)
+2013/11/05 23:56:17 [error] [php] Undefined index: app_path (/var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php:72)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/views/layouts/main.php(16): load_js()
+#1 /var/www/yii-framework/web/CBaseController.php(126): require()
+#2 /var/www/yii-framework/web/CBaseController.php(95): DashboardController->renderInternal()
+#3 /var/www/yii-framework/web/CController.php(784): DashboardController->renderFile()
+#4 /var/www/cashflow.dev/protected/controllers/DashboardController.php(8): DashboardController->render()
+#5 /var/www/yii-framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#6 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii-framework/web/CController.php(286): DashboardController->runAction()
+#8 /var/www/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#9 /var/www/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#10 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (72)
+in /var/www/cashflow.dev/protected/components/JsComposer/JsComposer.php (40)
+in /var/www/cashflow.dev/protected/globals.php (74)
+2013/11/06 00:48:57 [error] [exception.CException] exception 'CException' with message 'AuthController cannot find the requested view "".' in /var/www/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(782): CController->renderPartial('', NULL, true)
+#1 /var/www/cashflow.dev/protected/controllers/AuthController.php(10): CController->render('')
+#2 /var/www/yii-framework/web/actions/CInlineAction.php(49): AuthController->actionLogin()
+#3 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('login')
+#7 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('auth/login')
+#8 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/auth/login
+---
+2013/11/06 01:27:54 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "isAjaxRequest".' in /var/www/yii-framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Controller.php(31): CComponent->__call('isAjaxRequest', Array)
+#1 /var/www/cashflow.dev/protected/components/Controller.php(31): CHttpRequest->isAjaxRequest()
+#2 /var/www/cashflow.dev/protected/controllers/AuthController.php(13): Components\Controller->isAjax()
+#3 /var/www/yii-framework/web/actions/CInlineAction.php(49): AuthController->actionLogin()
+#4 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('login')
+#8 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('auth/login')
+#9 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/auth/login
+---
+2013/11/06 01:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The specified page cannot be found.' in /var/www/cashflow.dev/protected/controllers/AuthController.php:15
+Stack trace:
+#0 /var/www/yii-framework/web/actions/CInlineAction.php(49): AuthController->actionLogin()
+#1 /var/www/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/yii-framework/web/CWebApplication.php(282): CController->run('login')
+#5 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('auth/login')
+#6 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/auth/login
+---
+2013/11/06 01:47:49 [error] [php] Undefined offset: 0 (/var/www/cashflow.dev/protected/controllers/AuthController.php:23)
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(286): AuthController->runAction()
+#1 /var/www/yii-framework/web/CController.php(265): AuthController->runActionWithFilters()
+#2 /var/www/yii-framework/web/CWebApplication.php(282): AuthController->run()
+#3 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/auth/login
+in /var/www/cashflow.dev/protected/controllers/AuthController.php (23)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 01:48:05 [error] [php] Undefined offset: 0 (/var/www/cashflow.dev/protected/controllers/AuthController.php:23)
+Stack trace:
+#0 /var/www/yii-framework/web/CController.php(286): AuthController->runAction()
+#1 /var/www/yii-framework/web/CController.php(265): AuthController->runActionWithFilters()
+#2 /var/www/yii-framework/web/CWebApplication.php(282): AuthController->run()
+#3 /var/www/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/auth/login
+in /var/www/cashflow.dev/protected/controllers/AuthController.php (23)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 02:39:34 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Yii.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Controller.php(43): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(306): DashboardController->beforeAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): DashboardController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/Controller.php (43)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 02:40:41 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:963)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(306): DashboardController->beforeAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): DashboardController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/Controller.php (43)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 02:41:39 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:963)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(306): DashboardController->beforeAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): DashboardController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/dashboard
+in /var/www/cashflow.dev/protected/components/Controller.php (43)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('dashboard/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/dashboard/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "auth".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('auth')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('auth')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('default/auth')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/auth
+---
+2013/11/06 02:42:53 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:963)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(306): DashboardController->beforeAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): DashboardController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/cashflow.dev/protected/components/Controller.php (43)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 02:43:00 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:963)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(306): DashboardController->beforeAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): DashboardController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): DashboardController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): DashboardController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/cashflow.dev/protected/components/Controller.php (43)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 02:44:58 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `users`
+WHERE (username=:username) AND (password=MD5(:password)).
+in /var/www/cashflow.dev/protected/models/Users.php (13)
+in /var/www/cashflow.dev/protected/components/UserIdentity.php (23)
+in /var/www/cashflow.dev/protected/controllers/AuthController.php (34)
+2013/11/06 02:44:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `users`
+WHERE (username=:username) AND (password=MD5(:password))' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Users.php(13): CDbCommand->queryRow(true)
+#2 /var/www/cashflow.dev/protected/components/UserIdentity.php(23): Models\Users->getByCredentials('demo', 'demo')
+#3 /var/www/cashflow.dev/protected/controllers/AuthController.php(34): Components\UserIdentity->authenticate()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): AuthController->actionLogin()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('login')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('auth/login')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/auth/login
+HTTP_REFERER=http://cashflow.dev/auth/index
+---
+2013/11/06 02:45:15 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `users`
+WHERE (username=:username) AND (password=MD5(:password)).
+in /var/www/cashflow.dev/protected/models/Users.php (13)
+in /var/www/cashflow.dev/protected/components/UserIdentity.php (23)
+in /var/www/cashflow.dev/protected/controllers/AuthController.php (34)
+2013/11/06 02:45:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `users`
+WHERE (username=:username) AND (password=MD5(:password))' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Users.php(13): CDbCommand->queryRow(true)
+#2 /var/www/cashflow.dev/protected/components/UserIdentity.php(23): Models\Users->getByCredentials('demo', 'demo')
+#3 /var/www/cashflow.dev/protected/controllers/AuthController.php(34): Components\UserIdentity->authenticate()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): AuthController->actionLogin()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('login')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('auth/login')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/auth/login
+HTTP_REFERER=http://cashflow.dev/auth/index
+---
+2013/11/06 21:22:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:336
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('save')
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/save/fre...')
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/import/save/freshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/06 21:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "freshbookw".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('freshbookw')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('freshbookw')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/freshboo...')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/import/freshbookw
+---
+2013/11/06 21:38:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "freshbooksd".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(270): CController->missingAction('freshbooksd')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('freshbooksd')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/freshboo...')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/import/freshbooksd
+---
+2013/11/06 23:03:44 [error] [php] Argument 2 passed to Components\Freshbooks\XmlDomConstruct::fromMixed() must be an instance of Components\Freshbooks\DOMElement, instance of DOMElement given, called in /var/www/cashflow.dev/protected/components/Freshbooks/XmlDomConstruct.php on line 71 and defined (/var/www/cashflow.dev/protected/components/Freshbooks/XmlDomConstruct.php:50)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Freshbooks/Request.php(161): Components\Freshbooks\Request->getGeneratedXML()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(14): Components\Freshbooks\Request->request()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Freshbooks/XmlDomConstruct.php (50)
+in /var/www/cashflow.dev/protected/components/Freshbooks/XmlDomConstruct.php (71)
+in /var/www/cashflow.dev/protected/components/Freshbooks/Request.php (138)
+2013/11/06 23:08:16 [error] [php] Undefined index: expense (/var/www/cashflow.dev/protected/controllers/ImportController.php:18)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 23:08:21 [error] [php] Undefined index: expense (/var/www/cashflow.dev/protected/controllers/ImportController.php:18)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 23:09:10 [error] [php] Undefined index: expense (/var/www/cashflow.dev/protected/controllers/ImportController.php:18)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 23:56:12 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Validators/Import/freshbooks.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Validators/Import/Factory.php(14): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(35): create()
+#2 unknown(0): ImportController->actionSave()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/save/freshbooks
+in /var/www/cashflow.dev/protected/components/Validators/Import/Factory.php (14)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (35)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/06 23:56:20 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Validators/Import/freshbooks.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Validators/Import/Factory.php(14): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(35): create()
+#2 unknown(0): ImportController->actionSave()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/save/freshbooks
+in /var/www/cashflow.dev/protected/components/Validators/Import/Factory.php (14)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (35)
+in /var/www/cashflow.dev/index.php (14)

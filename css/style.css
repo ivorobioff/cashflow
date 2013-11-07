@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+.body-container
+{
+	width: auto;
+	padding: 0 20px;
+}
+
+.panel
+{
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+.import-options
+{
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.import-options .btn-block + .btn-block
+{
+	margin-top: 7px;
+}
