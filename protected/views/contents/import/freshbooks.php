@@ -4,14 +4,14 @@
     <li class="active">Freshbooks API</li>
     </ul>
     
-    <form class="form-horizontal" action="<?=$this->createUrl('/import/save/freshbooks')?>" id="signin-form">
+    <form class="form-horizontal" action="<?=$this->createUrl('/import/saveFreshbooks')?>" id="signin-form">
 	    <div class="control-group">
 		    <label>Enter your Freshbooks API key</label>
-		    <input type="text" name="key" />
+		    <input type="text" name="token" />
 	    </div>
 	    <div class="control-group">
 		    <label>Enter your Freshbooks sub-domain</label>
-		   <input type="text" name="sub_domain" />
+		   <input type="text" name="domain" />
 	    </div>
 	    <div class="control-group">
 		    <button type="submit" class="btn">Import Data</button>

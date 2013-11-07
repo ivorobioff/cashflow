@@ -8,6 +8,8 @@ use Models\Users;
  */
 class UserIdentity extends \CUserIdentity
 {
+	private $_data = array();
+	
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -20,8 +22,13 @@ class UserIdentity extends \CUserIdentity
 	{
 		$users = new Users();
 		
-		if (!$data = $users->getByCredentials($this->username, $this->password)) return false;
-		
+		if (!$this->_data = $users->getByCredentials($this->username, $this->password)) return false;
+				
 		return true;
+	}
+	
+	public function getId()
+	{
+		return $this->_data['id'];
 	}
 }

@@ -5,7 +5,7 @@ use Components\Import\Strategies\Base as BaseStrategy;
 use Models\Import\Categories;
 use Models\Import\Expenses;
 use Models\Import\Invoices;
-use Models\Import\LocalStorage;
+use Models\Import\LocalStorage as LocalStorageModel;
 
 class LocalStorage
 {
@@ -18,22 +18,22 @@ class LocalStorage
 		$this->_saveInvoices($strategy->getInvoices());
 	}
 	
-	private function _saveCategories($data)
+	private function _saveCategories(\Iterator $data)
 	{
 		$this->_saveModel(new Categories(), $data);
 	}
 	
-	private function _saveExpenses($data)
+	private function _saveExpenses(\Iterator $data)
 	{
 		$this->_saveModel(new Expenses(), $data);
 	}
 	
-	private function _saveInvoices($data)
+	private function _saveInvoices(\Iterator $data)
 	{
 		$this->_saveModel(new Invoices(), $data);
 	}
 	
-	private function _saveModel(LocalStorage $model, $data)
+	private function _saveModel(LocalStorageModel $model, \Iterator $data)
 	{
 		$save_data = array();
 		$c = 0;

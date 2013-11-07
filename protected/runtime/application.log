@@ -1135,3 +1135,441 @@ REQUEST_URI=/import/save/freshbooks
 in /var/www/cashflow.dev/protected/components/Validators/Import/Factory.php (14)
 in /var/www/cashflow.dev/protected/controllers/ImportController.php (35)
 in /var/www/cashflow.dev/index.php (14)
+2013/11/07 18:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/07 20:15:06 [error] [php] Undefined variable: alias (/var/www/cashflow.dev/protected/controllers/ImportController.php:28)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/saveFreshbooks
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (28)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 20:15:13 [error] [php] Undefined variable: alias (/var/www/cashflow.dev/protected/controllers/ImportController.php:28)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/saveFreshbooks
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (28)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:27:21 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/Strategies/Request.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php(16): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(17): Components\Import\Strategies\Freshbooks->__construct()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (16)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (17)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:28:27 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/Strategies/Request.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php(16): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(17): Components\Import\Strategies\Freshbooks->__construct()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (16)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (17)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:35:17 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/FreshbooksIterator/Categories.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php(22): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): Components\Import\Strategies\Freshbooks->getCategories()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (22)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:35:43 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/FreshbooksIterator/Categories.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php(22): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): Components\Import\Strategies\Freshbooks->getCategories()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (22)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:35:44 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/FreshbooksIterator/Categories.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php(22): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): Components\Import\Strategies\Freshbooks->getCategories()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (22)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:36:32 [error] [php] Undefined property: Components\Import\FreshbooksIterators\Categories::$_config (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php:62)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (62)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (52)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+2013/11/07 21:43:18 [error] [php] Undefined index: category (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Categories.php:10)
+Stack trace:
+#0 unknown(0): Components\Import\FreshbooksIterators\Categories->next()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Categories.php (10)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (74)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (32)
+2013/11/07 21:44:23 [error] [php] Undefined index: category (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Categories.php:10)
+Stack trace:
+#0 unknown(0): Components\Import\FreshbooksIterators\Categories->next()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Categories.php (10)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (74)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (32)
+2013/11/07 21:48:10 [error] [php] Creating default object from empty value (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php:36)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (36)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/07 21:50:43 [error] [php] Argument 1 passed to Components\Import\FreshbooksIterators\Expenses::_convertData() must be an array, string given, called in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php on line 19 and defined (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php:20)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (20)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (19)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (18)
+2013/11/07 21:56:47 [error] [exception.Components\Import\Exceptions\FreshbooksPullingError] exception 'Components\Import\Exceptions\FreshbooksPullingError' with message 'Invalid node: status.' in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php:78
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php(52): Components\Import\FreshbooksIterators\Base->_pull()
+#1 [internal function]: Components\Import\FreshbooksIterators\Base->rewind()
+#2 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array(Object(Components\Import\FreshbooksIterators\Expenses))
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/import
+---
+2013/11/07 22:06:54 [error] [php] Undefined index: expenses (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php:16)
+Stack trace:
+#0 unknown(0): Components\Import\FreshbooksIterators\Expenses->rewind()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (16)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (74)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (52)
+2013/11/07 22:14:55 [error] [php] Undefined index: expense (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php:19)
+Stack trace:
+#0 unknown(0): Components\Import\FreshbooksIterators\Expenses->next()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (19)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (74)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (32)
+2013/11/07 22:16:07 [error] [php] Undefined index: expense (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php:21)
+Stack trace:
+#0 unknown(0): Components\Import\FreshbooksIterators\Expenses->next()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (21)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (74)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (32)
+2013/11/07 22:16:29 [error] [php] Undefined index: expense (/var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php:21)
+Stack trace:
+#0 unknown(0): Components\Import\FreshbooksIterators\Expenses->next()
+#1 /var/www/cashflow.dev/protected/controllers/ImportController.php(18): iterator_to_array()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (21)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (74)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (32)
+2013/11/07 23:53:37 [error] [exception.Components\Import\Exceptions\FreshbooksPullingError] exception 'Components\Import\Exceptions\FreshbooksPullingError' with message 'System does not exist.' in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php:78
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php(52): Components\Import\FreshbooksIterators\Base->_pull()
+#1 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(41): Components\Import\FreshbooksIterators\Base->rewind()
+#2 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#3 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#4 /var/www/cashflow.dev/protected/controllers/ImportController.php(61): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/07 23:54:16 [error] [exception.Components\Import\Exceptions\FreshbooksPullingError] exception 'Components\Import\Exceptions\FreshbooksPullingError' with message 'System does not exist.' in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php:78
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php(52): Components\Import\FreshbooksIterators\Base->_pull()
+#1 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(41): Components\Import\FreshbooksIterators\Base->rewind()
+#2 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#3 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#4 /var/www/cashflow.dev/protected/controllers/ImportController.php(61): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/07 23:56:29 [error] [exception.Components\Import\Exceptions\FreshbooksPullingError] exception 'Components\Import\Exceptions\FreshbooksPullingError' with message 'System does not exist.' in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php:78
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php(52): Components\Import\FreshbooksIterators\Base->_pull()
+#1 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(41): Components\Import\FreshbooksIterators\Base->rewind()
+#2 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#3 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#4 /var/www/cashflow.dev/protected/controllers/ImportController.php(64): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/08 00:02:24 [error] [exception.PDOException] exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:275
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(275): PDOStatement->bindValue(0, '1', 2)
+#1 /var/www/cashflow.dev/protected/components/InsertOnly.php(128): CDbCommand->bindValue(0, '1')
+#2 /var/www/cashflow.dev/protected/components/InsertOnly.php(92): Components\InsertOnly->_bindRow(Object(CDbCommand), Array, 0)
+#3 /var/www/cashflow.dev/protected/components/InsertOnly.php(34): Components\InsertOnly->_insertAll()
+#4 /var/www/cashflow.dev/protected/models/Import/Categories.php(15): Components\InsertOnly->run()
+#5 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(56): Models\Import\Categories->addBunch(Array)
+#6 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#7 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#8 /var/www/cashflow.dev/protected/controllers/ImportController.php(59): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#14 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#15 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/08 00:07:45 [error] [exception.PDOException] exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:275
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(275): PDOStatement->bindValue(0, '1', 2)
+#1 /var/www/cashflow.dev/protected/components/InsertOnly.php(128): CDbCommand->bindValue(0, '1')
+#2 /var/www/cashflow.dev/protected/components/InsertOnly.php(92): Components\InsertOnly->_bindRow(Object(CDbCommand), Array, 0)
+#3 /var/www/cashflow.dev/protected/components/InsertOnly.php(34): Components\InsertOnly->_insertAll()
+#4 /var/www/cashflow.dev/protected/models/Import/Categories.php(15): Components\InsertOnly->run()
+#5 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(56): Models\Import\Categories->addBunch(Array)
+#6 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#7 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#8 /var/www/cashflow.dev/protected/controllers/ImportController.php(59): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#14 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#15 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/08 00:12:41 [error] [exception.PDOException] exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:275
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(275): PDOStatement->bindValue(0, '1', 2)
+#1 /var/www/cashflow.dev/protected/components/InsertOnly.php(126): CDbCommand->bindValue(0, '1')
+#2 /var/www/cashflow.dev/protected/components/InsertOnly.php(92): Components\InsertOnly->_bindRow(Object(CDbCommand), Array, 0)
+#3 /var/www/cashflow.dev/protected/components/InsertOnly.php(34): Components\InsertOnly->_insertAll()
+#4 /var/www/cashflow.dev/protected/models/Import/Categories.php(15): Components\InsertOnly->run()
+#5 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(56): Models\Import\Categories->addBunch(Array)
+#6 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#7 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#8 /var/www/cashflow.dev/protected/controllers/ImportController.php(59): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#14 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#15 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/08 00:13:52 [error] [exception.PDOException] exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:275
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(275): PDOStatement->bindValue(0, '1', 2)
+#1 /var/www/cashflow.dev/protected/components/InsertOnly.php(126): CDbCommand->bindValue(0, '1')
+#2 /var/www/cashflow.dev/protected/components/InsertOnly.php(92): Components\InsertOnly->_bindRow(Object(CDbCommand), Array, 0)
+#3 /var/www/cashflow.dev/protected/components/InsertOnly.php(34): Components\InsertOnly->_insertAll()
+#4 /var/www/cashflow.dev/protected/models/Import/Categories.php(15): Components\InsertOnly->run()
+#5 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(56): Models\Import\Categories->addBunch(Array)
+#6 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#7 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#8 /var/www/cashflow.dev/protected/controllers/ImportController.php(59): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#14 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#15 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---
+2013/11/08 00:15:16 [error] [exception.PDOException] exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:275
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(275): PDOStatement->bindValue(0, '1', 2)
+#1 /var/www/cashflow.dev/protected/components/InsertOnly.php(126): CDbCommand->bindValue(0, '1')
+#2 /var/www/cashflow.dev/protected/components/InsertOnly.php(92): Components\InsertOnly->_bindRow(Object(CDbCommand), Array, 0)
+#3 /var/www/cashflow.dev/protected/components/InsertOnly.php(34): Components\InsertOnly->_insertAll()
+#4 /var/www/cashflow.dev/protected/models/Import/Categories.php(15): Components\InsertOnly->run()
+#5 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(56): Models\Import\Categories->addBunch(Array)
+#6 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(23): Components\Import\LocalStorage->_saveModel(Object(Models\Import\Categories), Object(Components\Import\FreshbooksIterators\Categories))
+#7 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveCategories(Object(Components\Import\FreshbooksIterators\Categories))
+#8 /var/www/cashflow.dev/protected/controllers/ImportController.php(59): Components\Import\LocalStorage->save(Object(Components\Import\Strategies\Freshbooks))
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('saveFreshbooks')
+#14 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/saveFres...')
+#15 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/import/saveFreshbooks
+HTTP_REFERER=http://cashflow.dev/import/freshbooks
+---

@@ -8,10 +8,10 @@ class Freshbooks extends Base
 	protected function _getFieldsConfig()
 	{
 		return array(
-			'key' => array(
+			'token' => array(
 				'settness' => 'Enter your Freshbooks API key',
 			),
-			'sub_domain' => array(
+			'domain' => array(
 				'settness' => 'Enter your Freshbooks sub-domain',
 			),
 		);

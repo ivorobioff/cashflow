@@ -40,7 +40,6 @@ return array(
 			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-				'/import/save/<alias:\w+>' => '/import/save',
 			),
 		),
 		

@@ -775,9 +775,10 @@ abstract class CApplication extends CModule
 	 * @param integer $line the line number the error was raised at
 	 */
 	public function handleError($code,$message,$file,$line)
-	{//pred("");
+	{
 		if($code & error_reporting())
 		{
+			//pred("");
 			// disable error capturing to avoid recursive errors
 			restore_error_handler();
 			restore_exception_handler();

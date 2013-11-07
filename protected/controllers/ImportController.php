@@ -1,8 +1,9 @@
 <?php
 use Components\Controller;
 use Components\Import\LocalStorage;
-use Components\Import\Strategies\Factory as StrategiesFactory;
-use Components\Validators\Import\Factory as ValidatorsFactory;
+use Components\Validators\Import\Freshbooks as FreshbooksValidator;
+use Components\Import\Strategies\Freshbooks as FreshbooksStrategy;
+use Components\Import\Exceptions\FreshbooksPullingError;
 
 class ImportController extends Controller
 {
@@ -21,16 +22,16 @@ class ImportController extends Controller
 		$this->render('//contents/import/excel');
 	}
 	
-	public function actionSave($alias)
+	public function actionSaveFreshbooks()
 	{
-		$allowed_aliases = array('freshbooks', 'excel', 'manual');
-		
-		if (!in_array($alias, $allowed_aliases) || !$this->isAjax()) 
+		if (!$this->isAjax()) 
 		{
 			throw new CHttpException(404,'The specified page cannot be found.');
 		}
 		 		
-		$errors = ValidatorsFactory::create($alias)
+		$validator = new FreshbooksValidator();
+		
+		$errors = $validator
 			->setData($_POST)
 			->validate()
 			->getErrors();
@@ -43,10 +44,24 @@ class ImportController extends Controller
 			}
 		}
 				
-		$strategy = StrategiesFactory::create($alias, $_POST);
+		$config = array(
+			'domain' => $_POST['domain'],
+			'token' => $_POST['token'],
+			'date_from' => date('Y-m-d', strtotime(date('Y-m-d').' -2 year')),
+		);
+		
+		$strategy = new FreshbooksStrategy($config);
 			
 		$storage = new LocalStorage();
-		$storage->save($strategy);
+		
+		try
+		{
+			$storage->save($strategy);
+		}
+		catch (FreshbooksPullingError $ex)
+		{
+			return $this->ajaxError(array($ex->getMessage()));	
+		}
 		
 		$this->ajaxSuccess();
 	}

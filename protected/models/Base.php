@@ -10,14 +10,4 @@ abstract class Base
 	{
 		return \Yii::app()->db->createCommand();
 	}
-	
-	protected function _insertAll($table, array $data)
-	{
-		\Yii::app()
-			->db
-			->schema
-			->commandBuilder
-			->createMultipleInsertCommand($table, $data)
-			->execute();
-	}
 }

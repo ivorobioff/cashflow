@@ -91,7 +91,7 @@ class Request
     {
         $this->_args = $data;
     }
-
+    
     /*
      * Determine whether or not it was successful
      *
