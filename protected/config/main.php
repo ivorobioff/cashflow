@@ -32,7 +32,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin' => false,
-			'loginUrl'=> 'auth/index',
+			'loginUrl'=> '/auth',
 		),
 		
 		'urlManager'=>array(

@@ -2,10 +2,14 @@
 namespace Components\Import\FreshbooksIterators;
 
 use Components\Import\FreshbooksIterators\Base;
+use Components\Freshbooks\Request;
+use Components\Import\Exceptions\FreshbooksPullingError;
 
 class Expenses extends Base
 {
 	private $_date_from;
+	
+	private $_cache_categories;
 	
 	public function __construct($date_from)
 	{
@@ -21,8 +25,8 @@ class Expenses extends Base
 	{
 		return array(
 			'user_id' => \Yii::app()->user->id,
-			'foreign_category_id' => $data['category_id'],
-			'foreign_id' => $data['expense_id'],
+			'category_name' => setif($this->_cache_categories, $data['category_id'], ''),
+			'foreign_id' => intval($data['expense_id']),
 			'amount' => $data['amount'],
 			'date' => $data['date'],
 			'source_name' => 'freshbooks'
@@ -38,5 +42,40 @@ class Expenses extends Base
 	protected function _getFuncName()
 	{
 		return 'expense.list';
+	}
+	
+	protected function _pull()
+	{
+		if ($data = parent::_pull())
+		{
+			if (is_null($this->_cache_categories))
+			{
+				$categories = $this->_pullCategories();
+				
+				foreach ($categories as $category)
+				{
+					$this->_cache_categories[intval($category['category_id'])] = $category['name'];
+				}
+			}		
+		}
+		
+		return $data;
+	}
+	
+	private function _pullCategories()
+	{
+		$request = new Request('category.list');
+		$request->post(array('per_page' => 1000));
+		
+		$request->request();
+		
+		if ($request->success())
+		{
+			return $this->_prepareResult($request->getResponse(), 'categories', 'category');
+		}
+		else
+		{
+			throw new FreshbooksPullingError($request->getError());
+		}
 	}
 }

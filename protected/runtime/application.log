@@ -1573,3 +1573,109 @@ Stack trace:
 REQUEST_URI=/import/saveFreshbooks
 HTTP_REFERER=http://cashflow.dev/import/freshbooks
 ---
+2013/11/08 20:36:14 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/FreshbooksIterators/Categories.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php(22): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\Strategies\Freshbooks->getCategories()
+#2 /var/www/cashflow.dev/protected/controllers/ImportController.php(60): Components\Import\LocalStorage->save()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/saveFreshbooks
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (22)
+in /var/www/cashflow.dev/protected/components/Import/LocalStorage.php (16)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (60)
+2013/11/08 20:37:38 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/Import/FreshbooksIterators/FreshbooksPullingError.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php(72): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php(52): Components\Import\FreshbooksIterators\Expenses->_pullCategories()
+#2 /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php(52): Components\Import\FreshbooksIterators\Expenses->_pull()
+#3 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(35): Components\Import\FreshbooksIterators\Expenses->rewind()
+#4 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(22): Components\Import\LocalStorage->_saveModel()
+#5 /var/www/cashflow.dev/protected/components/Import/LocalStorage.php(16): Components\Import\LocalStorage->_saveExpenses()
+#6 /var/www/cashflow.dev/protected/controllers/ImportController.php(60): Components\Import\LocalStorage->save()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionSaveFreshbooks()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/saveFreshbooks
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (72)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Expenses.php (52)
+in /var/www/cashflow.dev/protected/components/Import/FreshbooksIterators/Base.php (52)
+2013/11/08 20:57:56 [error] [php] include(Users.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(8): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (8)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/08 22:16:32 [error] [php] Undefined index: domain (/var/www/cashflow.dev/protected/controllers/ImportController.php:40)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/update
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (40)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/08 22:18:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':=
+ORDER BY `user_id` DESC' at line 3. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE user_id:=
+ORDER BY `user_id` DESC.
+in /var/www/cashflow.dev/protected/models/Import/Expenses.php (21)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (45)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/08 22:18:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':=
+ORDER BY `user_id` DESC' at line 3. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE user_id:=
+ORDER BY `user_id` DESC' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Import/Expenses.php(21): CDbCommand->queryRow(true)
+#2 /var/www/cashflow.dev/protected/controllers/ImportController.php(45): Models\Import\Expenses->getLastDate('1')
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionUpdate()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('update')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('import/update')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/import/update
+HTTP_REFERER=http://cashflow.dev/auth/index
+---
+2013/11/08 22:23:04 [error] [php] Undefined index: date_from (/var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php:22)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ImportController->actionUpdate()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ImportController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ImportController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ImportController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/import/update
+in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (22)
+in /var/www/cashflow.dev/protected/components/Import/LocalStorage.php (16)
+in /var/www/cashflow.dev/protected/controllers/ImportController.php (55)

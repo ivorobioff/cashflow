@@ -69,12 +69,8 @@ function create_singleton(class_name){
 	}
 }
 
-function _url(url){
-	return url;
-}
 
 function post(url, data, callback){
-	url = _url(url);
 	$.post(url, data, function(result){
 		
 		if (_.isFunction(callback["callback"])){

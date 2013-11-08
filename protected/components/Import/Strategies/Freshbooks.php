@@ -17,18 +17,31 @@ class Freshbooks extends Base
 		Request::init($this->_config['domain'], $this->_config['token']);
 	}
 	
-	public function getCategories()
-	{	
-		return new Categories();
-	}
-	
 	public function getExpenses()
 	{
-		return new Expenses($this->_config['date_from']);
+		if (isset($this->_config['expenses_date_from']))
+		{
+			$date_from = $this->_config['expenses_date_from'];
+		}
+		else
+		{
+			$date_from = $this->_config['date_from'];	
+		}
+		
+		return new Expenses($date_from);
 	}
 	
 	public function getInvoices()
 	{		
-		return new Invoices($this->_config['date_from']);
+		if (isset($this->_config['invoices_date_from']))
+		{
+			$date_from = $this->_config['invoices_date_from'];
+		}
+		else
+		{
+			$date_from = $this->_config['date_from'];
+		}
+		
+		return new Invoices($date_from);
 	}
 }

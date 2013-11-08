@@ -43,14 +43,19 @@
 
     </style>
 	  	<div class="container">
-	
 		      <form class="form-signin" id="signin-form" action="<?=$this->createUrl('/auth/login')?>">
+			       	<div id="action-label" style="display: none;">
+			       		
+			       		<h4><img src="<?=Yii::app()->request->baseUrl?>/img/sml-loader.gif" /> Looking for updates...</h4>
+			       	</div>
+			        <div id="inputs-container">
 			        <h2 class="form-signin-heading">Please sign in</h2>
 			        
 			        <input type="text" class="input-block-level" name="username" placeholder="Username">
 			        <input type="password" class="input-block-level" name="password" placeholder="Password">
 			        
 			        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+			        </div>
 		      </form>
 	
 	    </div>

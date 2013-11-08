@@ -40,7 +40,7 @@ class Controller extends \CController
 	
 		if (!$this->_checkAuth())
 		{
-			return $this->redirect($this->createUrl(\Yii::app()->user->loginUrl));
+			return $this->redirect($this->createUrl($this->createUrl(\Yii::app()->user->loginUrl)));
 		}
 	
 		return true;

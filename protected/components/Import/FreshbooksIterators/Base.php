@@ -57,7 +57,7 @@ abstract class Base implements \Iterator
 		}
 	}
 	
-	private function _pull()
+	protected function _pull()
 	{
 		$request = new Request($this->_getFuncName());
 		

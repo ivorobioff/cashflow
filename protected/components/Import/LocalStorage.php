@@ -13,16 +13,10 @@ class LocalStorage
 	
 	public function save(BaseStrategy $strategy)
 	{
-		$this->_saveCategories($strategy->getCategories());
 		$this->_saveExpenses($strategy->getExpenses());
 		$this->_saveInvoices($strategy->getInvoices());
 	}
-	
-	private function _saveCategories(\Iterator $data)
-	{
-		$this->_saveModel(new Categories(), $data);
-	}
-	
+
 	private function _saveExpenses(\Iterator $data)
 	{
 		$this->_saveModel(new Expenses(), $data);

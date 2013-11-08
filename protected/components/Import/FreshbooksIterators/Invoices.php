@@ -38,7 +38,7 @@ class Invoices extends Base
 		return array(
 			'user_id' => \Yii::app()->user->id,
 			'name' => $data['name'],
-			'foreign_id' => $data['line_id'],
+			'foreign_id' => intval($data['line_id']),
 			'source_name' => 'freshbooks',
 			'amount' => $data['amount'],
 			'date' => $data['date']

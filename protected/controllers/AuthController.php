@@ -2,6 +2,7 @@
 use Components\Controller;
 use Components\Validators\Auth as AuthValidator;
 use Components\UserIdentity;
+use Models\Users;
 
 class AuthController extends Controller
 {
@@ -9,6 +10,11 @@ class AuthController extends Controller
 	
 	public function actionIndex()
 	{
+		if (!Yii::app()->user->isGuest)
+		{
+			return $this->redirect($this->createUrl('/dashboard'));	
+		}
+		
 		$this->renderPartial('//contents/auth');
 	}
 	
@@ -35,7 +41,15 @@ class AuthController extends Controller
 			
 		Yii::app()->user->login($auth);
 		
-		return $this->ajaxSuccess();
+		$users_model = new Users();
+		
+		$has_freshbooks = false;
+		if ($user = $users_model->getById(\Yii::app()->user->id))
+		{
+			if ($user['freshbooks_token'] && $user['freshbooks_domain']) $has_freshbooks = true;
+		}
+		
+		return $this->ajaxSuccess(array('has_freshbooks' => $has_freshbooks));
 	}
 	
 	public function actionLogout()

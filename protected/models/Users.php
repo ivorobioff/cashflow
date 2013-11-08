@@ -29,6 +29,20 @@ class Users extends Base
 	
 	public function hasData($id)
 	{
+		$res = $this->_createQuery()
+			->from('expenses')
+			->where('user_id=:user_id', array(':user_id' => $id))
+			->queryRow();
 		
-	}
+		if ($res) return true;
+		
+		$res = $this->_createQuery()
+			->from('invoices')
+			->where('user_id=:user_id', array(':user_id' => $id))
+			->queryRow();
+		
+		if ($res) return true;
+		
+		return false;
+	} 
 }

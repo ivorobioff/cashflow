@@ -5,13 +5,62 @@ use Components\Validators\Import\Freshbooks as FreshbooksValidator;
 use Components\Import\Strategies\Freshbooks as FreshbooksStrategy;
 use Components\Import\Exceptions\FreshbooksPullingError;
 use Models\Users;
+use Models\Import\Expenses;
+use Models\Import\Invoices;
 
 class ImportController extends Controller
 {
+	public function beforeAction($action)
+	{
+		parent::beforeAction($action);
+		
+		$allowed_actions = array('update');
+		
+		$users_model = new Users();
+		
+		if ($users_model->hasData(\Yii::app()->user->id) && !in_array($action->id, $allowed_actions))
+		{
+			return $this->redirect($this->createUrl('/dashboard'));
+		}
+		
+		return true;
+	}
+	
 	public function actionIndex()
 	{
 		$this->render('//contents/import/index');
 	}	
+	
+	public function actionUpdate()
+	{
+		$expenses_model = new Expenses();
+		$invoices_model = new Invoices();
+		$users_model = new Users();
+		
+		$user = $users_model->getById(\Yii::app()->user->id);
+		
+		$config = array(
+			'domain' => $user['freshbooks_domain'],
+			'token' => $user['freshbooks_token'],
+			'expenses_date_from' => $expenses_model->getLastDate(\Yii::app()->user->id),
+			'invoices_date_from' => $invoices_model->getLastDate(\Yii::app()->user->id),
+		);
+
+		$strategy = new FreshbooksStrategy($config);
+			
+		$storage = new LocalStorage();
+		
+		try
+		{
+			$storage->save($strategy);
+		}
+		catch (FreshbooksPullingError $ex)
+		{
+			return $this->ajaxError(array($ex->getMessage()));
+		}
+		
+		$this->ajaxSuccess();
+	}
 	
 	public function actionFreshbooks()
 	{
