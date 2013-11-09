@@ -24,4 +24,14 @@ class Expenses extends Base implements LocalStorage
 		
 		return $res['date'];
 	}
+	
+	public function getAllByUserId($id, $date_from, $date_to)
+	{
+		return $this->_createQuery()
+			->from('expenses')
+			->where('date >=:date_from', array(':date_from' => $date_from))
+			->andWhere('date <=:date_to', array(':date_to' => $date_to))
+			->andWhere('user_id=:user_id', array(':user_id' => $id))
+			->queryAll(true);
+	}
 }

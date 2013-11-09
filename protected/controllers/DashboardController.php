@@ -1,6 +1,7 @@
 <?php
 use Components\Controller;
 use Models\Users;
+use Components\ExcelFormulas;
 
 class DashboardController extends Controller
 {

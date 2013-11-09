@@ -1679,3 +1679,554 @@ REQUEST_URI=/import/update
 in /var/www/cashflow.dev/protected/components/Import/Strategies/Freshbooks.php (22)
 in /var/www/cashflow.dev/protected/components/Import/LocalStorage.php (16)
 in /var/www/cashflow.dev/protected/controllers/ImportController.php (55)
+2013/11/09 13:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/09 13:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/09 19:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/09 19:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/09 19:39:36 [error] [php] Argument 1 passed to Components\DataBuilder\Base::__construct() must be an array, null given, called in /var/www/cashflow.dev/protected/controllers/ExpensesController.php on line 14 and defined (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:9)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (9)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (14)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/09 19:41:52 [error] [php] Argument 1 passed to Components\DataBuilder\Base::__construct() must be an array, boolean given, called in /var/www/cashflow.dev/protected/controllers/ExpensesController.php on line 14 and defined (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:9)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (9)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (14)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/09 20:07:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':=user_id' at line 3. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE user_id:=user_id.
+in /var/www/cashflow.dev/protected/models/Import/Expenses.php (35)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php (12)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (16)
+2013/11/09 20:07:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':=user_id' at line 3. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE user_id:=user_id' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Import/Expenses.php(35): CDbCommand->queryAll(true)
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php(12): Models\Import\Expenses->getAllByUserId('1', '2013-01-01', '2013-12-31')
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(16): Components\DataBuilder\Expenses->_fetchData()
+#4 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Base->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('expenses')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/expenses
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/09 20:07:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':=user_id' at line 3. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE user_id:=user_id.
+in /var/www/cashflow.dev/protected/models/Import/Expenses.php (35)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php (12)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (16)
+2013/11/09 20:07:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':=user_id' at line 3. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE user_id:=user_id' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Import/Expenses.php(35): CDbCommand->queryAll(true)
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php(12): Models\Import\Expenses->getAllByUserId('1', '2013-01-01', '2013-12-31')
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(16): Components\DataBuilder\Expenses->_fetchData()
+#4 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Base->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('expenses')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/expenses
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/09 20:08:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE ((date_from >=:date_from) AND (date_to <=:date_to)) AND (user_id:=user_id).
+in /var/www/cashflow.dev/protected/models/Import/Expenses.php (35)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php (12)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (16)
+2013/11/09 20:08:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE ((date_from >=:date_from) AND (date_to <=:date_to)) AND (user_id:=user_id)' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Import/Expenses.php(35): CDbCommand->queryAll(true)
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php(12): Models\Import\Expenses->getAllByUserId('1', '2013-01-01', '2013-12-31')
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(16): Components\DataBuilder\Expenses->_fetchData()
+#4 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Base->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('expenses')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/expenses
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/09 20:09:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE ((date_from >=:date_from) AND (date_to <=:date_to)) AND (user_id:=user_id).
+in /var/www/cashflow.dev/protected/models/Import/Expenses.php (35)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php (12)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (16)
+2013/11/09 20:09:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE ((date_from >=:date_from) AND (date_to <=:date_to)) AND (user_id:=user_id)' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Import/Expenses.php(35): CDbCommand->queryAll(true)
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php(12): Models\Import\Expenses->getAllByUserId('1', '2013-01-01', '2013-12-31')
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(16): Components\DataBuilder\Expenses->_fetchData()
+#4 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Base->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('expenses')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/expenses
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/09 20:09:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date_from' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE ((date_from >=:date_from) AND (date_to <=:date_to)) AND (user_id=:user_id).
+in /var/www/cashflow.dev/protected/models/Import/Expenses.php (35)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php (12)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (16)
+2013/11/09 20:09:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date_from' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `expenses`
+WHERE ((date_from >=:date_from) AND (date_to <=:date_to)) AND (user_id=:user_id)' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/cashflow.dev/protected/models/Import/Expenses.php(35): CDbCommand->queryAll(true)
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Expenses.php(12): Models\Import\Expenses->getAllByUserId('1', '2013-01-01', '2013-12-31')
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(16): Components\DataBuilder\Expenses->_fetchData()
+#4 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Base->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('expenses')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/expenses
+HTTP_REFERER=http://cashflow.dev/dashboard
+---
+2013/11/09 22:39:27 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:63)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (63)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 22:41:59 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:63)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (63)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 22:42:30 [error] [php] Undefined offset: 0 (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:111)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (111)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (68)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+2013/11/09 22:43:10 [error] [php] Argument 3 passed to Components\ExcelFormulas::calcGrowth() must be an array, integer given, called in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php on line 108 and defined (/var/www/cashflow.dev/protected/components/ExcelFormulas.php:8)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#1 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas.php (8)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (108)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (68)
+2013/11/09 22:43:46 [error] [php] trend(): Number of elements in coordinate arrays do not match. (/var/www/cashflow.dev/protected/components/ExcelFormulas.php:20)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(68): Components\DataBuilder\Expenses->_calcFutureValue()
+#1 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#2 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas.php (20)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (108)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (68)
+2013/11/09 23:13:50 [error] [php] log() expects parameter 1 to be double, array given (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php:93)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#1 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(118): Components\ExcelFormulas->calcGrowth()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(68): Components\DataBuilder\Expenses->_calcFutureValue()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#4 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (93)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (111)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas.php (23)
+2013/11/09 23:17:19 [error] [php] trend(): Number of elements in coordinate arrays do not match. (/var/www/cashflow.dev/protected/components/ExcelFormulas.php:20)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#1 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#2 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas.php (20)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (119)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+2013/11/09 23:20:51 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(109): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/09 23:20:52 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(109): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/09 23:22:56 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(109): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/09 23:22:57 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(109): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/09 23:22:58 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(109): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/09 23:27:21 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(109): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(69): Components\DataBuilder\Expenses->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Expenses->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(15): Components\DataBuilder\Expenses->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/09 23:53:40 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:53:42 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:55:28 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:55:54 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:55:54 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:56:40 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:56:41 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/09 23:57:58 [error] [php] Illegal offset type (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
+2013/11/10 00:11:14 [error] [php] Undefined index: Advertising (/var/www/cashflow.dev/protected/components/DataBuilder/Base.php:69)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (69)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Base.php (20)
+in /var/www/cashflow.dev/protected/controllers/ExpensesController.php (15)
