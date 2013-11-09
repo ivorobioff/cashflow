@@ -1,5 +1,5 @@
 <?php
-namespace Components\JsComposer;
+namespace Components;
 
 use Components\JsComposer\Exceptions\ErrorSave;
 use Components\JsComposer\Exceptions\NoStart;

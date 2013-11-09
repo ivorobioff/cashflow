@@ -1,5 +1,5 @@
 <?php
-use Components\JsComposer\JsComposer;
+use Components\JsComposer;
 use Components\JsComposer\Exceptions\NoStart;
 
 function pre($str)
