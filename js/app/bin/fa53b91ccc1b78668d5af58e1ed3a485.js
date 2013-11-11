@@ -132,7 +132,8 @@ Views.SigninForm = Views.AutoRedirectForm.extend({
 	_id: 'signin-form',
 	
 	success: function(res){
-		if (res.has_freshbooks){
+		location.href = this._redirect_url;
+		/*if (res.has_freshbooks){
 			this._el.find('#action-label').show();
 			this._el.find('#inputs-container').hide();
 			
@@ -143,6 +144,6 @@ Views.SigninForm = Views.AutoRedirectForm.extend({
 			});
 		} else {
 			location.href = this._redirect_url;
-		}
+		}*/
 	}
 });

@@ -6,6 +6,7 @@ return array(
 	'aliases' => array(
 		'Components' => __DIR__.'/../components/',
 		'Models' => __DIR__.'/../models/',
+		'Helpers' => __DIR__.'/../helpers/',
 	),
 		
 	// preloading 'log' component

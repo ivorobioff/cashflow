@@ -1,12 +1,12 @@
 <?php
 namespace Components\DataBuilder;
 use Components\DataBuilder\LocalStorage;
-use Models\Import\Expenses as ExpensesModel;
+use Models\Import\Invoices as InvoicesModel;
 
-class Expenses extends LocalStorage
+class Invoices extends LocalStorage
 {	
 	protected function _getLocalStorage()
 	{
-		return new ExpensesModel();
+		return new InvoicesModel();
 	}
 }

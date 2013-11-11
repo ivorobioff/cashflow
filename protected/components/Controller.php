@@ -1,5 +1,6 @@
 <?php
 namespace Components;
+use Helpers\Basic as BasicHelper;
 /**
  * Controller is the customized base controller class.
  * All controller classes for this application should extend from this base class.
@@ -10,6 +11,12 @@ class Controller extends \CController
 	
 	protected $_require_auth = true;
 	protected $_auth_exceptions = array();
+	
+	public function init()
+	{
+		parent::init();
+		$this->attachBehavior('basic_helper', new BasicHelper());
+	}
 	
 	/**
 	 * Отправить ответ об успехе

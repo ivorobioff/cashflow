@@ -26,3 +26,29 @@
 {
 	margin-top: 7px;
 }
+
+table.bld-data
+{
+	font-size: 12px; 
+}
+
+table.bld-data td, table.bld-data th
+{
+	padding: 5px;
+}
+
+table.bld-data th
+{
+	text-align: center;
+	background-color: #EFEFEF;
+}
+
+tr.bld-total
+{
+	font-weight: bold;
+}
+
+.bld-container
+{
+	margin: 15px 70px;
+}
