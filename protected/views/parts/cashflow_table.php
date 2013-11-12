@@ -6,12 +6,12 @@
  ?>
  <h4><?=$year?></h4>
   <table class="table table-bordered bld-data">
-   <?=$this->renderPartial('//parts/table_head', array('year' => $year, 'months' => $months))?>
+ <?=$this->renderPartial('//parts/table_head', array('year' => $year, 'months' => $months))?>
  <?php
  foreach ($names as $name => $months)
  {
  ?>
- <tr>
+ <tr <?=$name == 'Total' ? 'class="total-bold"' : ''?>>
  <td><?=CHtml::encode($name)?></td>
  <?php
  foreach ($months as $month => $value)
@@ -22,24 +22,12 @@
  }
  ?>
  <td>
- <?=$this->money($summary_data[$year]['names'][$name])?>
+ <?=$this->money($summary_data[$year][$name])?>
  </td>
  </tr>
  <?php
  }
  ?>
- <tr class="bld-total">
- 	<td>Total</td>
-<?php
- foreach ($summary_data[$year]['months'] as $value)
- {
- ?>
- <td><?=$this->money($value)?></td>
- <?php
- }
-?>
-<td><?=$this->money($summary_data[$year]['total'])?></td>
- </tr>
    </table>
  <?php
  }

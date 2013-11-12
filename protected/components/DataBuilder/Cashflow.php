@@ -11,7 +11,7 @@ class Cashflow extends Base
 	{
 		$config = array(
 			'average_time' => array(
-				'builder' => new Expenses($this->_params),
+				'builder' => $this->_createExpensesBuilder(),
 				'name' => 'Expenses',
 			),
 			'starting_cashin' => array(
@@ -21,7 +21,45 @@ class Cashflow extends Base
 		);
 
 		$result = $this->_buildResultByLookups($config);
+
+		$prev_total = 0;
+
+		foreach ($result as $year => $names)
+		{
+			foreach ($result[$year]['Cash In'] as $month => $value)
+			{
+				$budget = setif($this->_params['budgets'], $year.'-'.$month, $prev_total);
+
+				$prev_total = $result[$year]['Total'][$month] = ($budget + $value - $result[$year]['Expenses'][$month]);
+
+				$result[$year]['$ at Bank'][$month] = $budget;
+			}
+		}
+
 		return $result;
+	}
+
+	protected function _createExpensesBuilder()
+	{
+		return new Expenses($this->_params);
+	}
+
+	public function buildSummary(array $data)
+	{
+		$res = array();
+
+		foreach ($data as $year => $names)
+		{
+			$res[$year]['Cash In'] = array_sum($names['Cash In']);
+			$res[$year]['Expenses'] = array_sum($names['Expenses']);
+
+			$budget = reset($names['$ at Bank']);
+			$budget = current($names['$ at Bank']);
+			$res[$year]['$ at Bank'] = $budget;
+			$res[$year]['Total'] = $res[$year]['$ at Bank'] + $res[$year]['Cash In'] - $res[$year]['Expenses'];
+		}
+
+		return $res;
 	}
 
 	private function _buildResultByLookups($config)
@@ -70,7 +108,7 @@ class Cashflow extends Base
 
 	protected function _getNames()
 	{
-		return array('$ at Bank', 'Cash In', 'Expenses');
+		return array('$ at Bank', 'Cash In', 'Expenses', 'Total');
 	}
 
 	private function _calcLookupParam($name)
