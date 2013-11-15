@@ -5,9 +5,9 @@ use Components\DataBuilder\Cashflow as CashflowBuilder;
 
 class Cashflow extends CashflowBuilder
 {
-	protected function _fetchData()
+	public function build()
 	{
-		$result = parent::_fetchData();
+		$result = parent::build();
 
 		foreach ($result as $year => $names)
 		{

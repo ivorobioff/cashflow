@@ -7,7 +7,7 @@ use Components\DataBuilder\Invoices;
 
 class Cashflow extends Base
 {
-	protected function _fetchData()
+	public function build()
 	{
 		$config = array(
 			'average_time' => array(
@@ -33,10 +33,22 @@ class Cashflow extends Base
 				$prev_total = $result[$year]['Total'][$month] = ($budget + $value - $result[$year]['Expenses'][$month]);
 
 				$result[$year]['$ at Bank'][$month] = $budget;
+
+				$result[$year] = $this->_orderResult($result[$year]);
 			}
 		}
 
 		return $result;
+	}
+
+	private function _orderResult(array $result)
+	{
+		return array(
+			'$ at Bank' => $result['$ at Bank'],
+			'Cash In' => $result['Cash In'],
+			'Expenses' => $result['Expenses'],
+			'Total' => $result['Total']
+		);
 	}
 
 	protected function _createExpensesBuilder()
@@ -104,11 +116,6 @@ class Cashflow extends Base
 		}
 
 		return $result;
-	}
-
-	protected function _getNames()
-	{
-		return array('$ at Bank', 'Cash In', 'Expenses', 'Total');
 	}
 
 	private function _calcLookupParam($name)

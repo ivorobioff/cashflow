@@ -6,9 +6,7 @@ use Components\DataBuilder\Expenses as ExpensesBuilder;
 
 class Expenses extends Base
 {
-	private $_expenses_names = array();
-
-	protected function _fetchData()
+	public function build()
 	{
 		$builder = new ExpensesBuilder($this->_params);
 		$data = $builder->build();
@@ -21,21 +19,18 @@ class Expenses extends Base
 			{
 				foreach ($months as $month => $value)
 				{
-					$this->_expenses_names[$name] = 1;
-					$result[$year][$name][$month] = $value - $value * $this->_params['reduction_expenses'] / 100;
+					if (!empty($this->_params['expenses_fixed'][$name]))
+					{
+						$result[$year][$name][$month] = $value;
+					}
+					else
+					{
+						$result[$year][$name][$month] = $value - $value * $this->_params['reduction_expenses'] / 100;
+					}
 				}
 			}
 		}
 
 		return $result;
-	}
-
-	protected function _getNames()
-	{
-		$names = array_keys($this->_expenses_names);
-
-		asort($names);
-
-		return $names;
 	}
 }

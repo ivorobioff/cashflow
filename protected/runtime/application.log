@@ -3494,3 +3494,405 @@ REQUEST_URI=/budgets
 in /var/www/cashflow.dev/protected/views/parts/table.php (2)
 in /var/www/cashflow.dev/protected/views/contents/budgets.php (5)
 in /var/www/cashflow.dev/protected/controllers/BudgetsController.php (29)
+2013/11/13 02:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 02:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 08:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 08:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 08:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 08:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 22:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/13 22:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/14 22:02:59 [error] [exception.CException] exception 'CException' with message 'ParamsController and its behaviors do not have a method or closure named "dateConvert".' in /var/www/cashflow.dev/protected/vendor/yii-framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ParamsController.php(18): CComponent->__call('dateConvert', Array)
+#1 /var/www/cashflow.dev/protected/controllers/ParamsController.php(18): ParamsController->dateConvert('01/2013')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateDate')
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateDa...')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/params/updateDate
+HTTP_REFERER=http://cashflow.dev/expenses
+---
+2013/11/14 22:03:23 [error] [exception.CException] exception 'CException' with message 'ParamsController and its behaviors do not have a method or closure named "dateConvert".' in /var/www/cashflow.dev/protected/vendor/yii-framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ParamsController.php(18): CComponent->__call('dateConvert', Array)
+#1 /var/www/cashflow.dev/protected/controllers/ParamsController.php(18): ParamsController->dateConvert('01/2013')
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateDate')
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateDa...')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/params/updateDate
+HTTP_REFERER=http://cashflow.dev/expenses
+---
+2013/11/14 22:05:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/14 22:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/14 22:18:28 [error] [php] Undefined variable: field (/var/www/cashflow.dev/protected/components/Validators/DateRangeFilter.php:30)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateDate
+in /var/www/cashflow.dev/protected/components/Validators/DateRangeFilter.php (30)
+in /var/www/cashflow.dev/protected/components/Validators/Base.php (32)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (11)
+2013/11/14 22:20:29 [error] [php] Undefined offset: 1 (/var/www/cashflow.dev/protected/helpers/Basic.php:14)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ParamsController.php(11): Components\Validators\DateRangeFilter->validate()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateDate
+in /var/www/cashflow.dev/protected/helpers/Basic.php (14)
+in /var/www/cashflow.dev/protected/components/Validators/DateRangeFilter.php (26)
+in /var/www/cashflow.dev/protected/components/Validators/Base.php (32)
+2013/11/14 22:20:47 [error] [php] Undefined offset: 1 (/var/www/cashflow.dev/protected/helpers/Basic.php:14)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ParamsController.php(11): Components\Validators\DateRangeFilter->validate()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateDate
+in /var/www/cashflow.dev/protected/helpers/Basic.php (14)
+in /var/www/cashflow.dev/protected/components/Validators/DateRangeFilter.php (26)
+in /var/www/cashflow.dev/protected/components/Validators/Base.php (32)
+2013/11/14 22:25:51 [error] [php] Undefined offset: 1 (/var/www/cashflow.dev/protected/helpers/Basic.php:14)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/ParamsController.php(11): Components\Validators\DateRangeFilter->validate()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateDate
+in /var/www/cashflow.dev/protected/helpers/Basic.php (14)
+in /var/www/cashflow.dev/protected/components/Validators/DateRangeFilter.php (26)
+in /var/www/cashflow.dev/protected/components/Validators/Base.php (32)
+2013/11/14 22:38:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: UPDATE `params` SET `0`=:0, `1`=:1, `2`=:2, `3`=:3 WHERE user_id=:user_id.
+in /var/www/cashflow.dev/protected/models/Params.php (24)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (24)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/14 22:38:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: UPDATE `params` SET `0`=:0, `1`=:1, `2`=:2, `3`=:3 WHERE user_id=:user_id' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(1285): CDbCommand->execute(Array)
+#1 /var/www/cashflow.dev/protected/models/Params.php(24): CDbCommand->update('params', Array, 'user_id=:user_i...', Array)
+#2 /var/www/cashflow.dev/protected/controllers/ParamsController.php(24): Models\Params->updateByUserId('1', Array)
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateDate')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateDa...')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/params/updateDate
+HTTP_REFERER=http://cashflow.dev/expenses
+---
+2013/11/14 22:39:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: UPDATE `params` SET `0`=:0, `1`=:1, `2`=:2, `3`=:3 WHERE user_id=:user_id.
+in /var/www/cashflow.dev/protected/models/Params.php (24)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (24)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/14 22:39:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: UPDATE `params` SET `0`=:0, `1`=:1, `2`=:2, `3`=:3 WHERE user_id=:user_id' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(1285): CDbCommand->execute(Array)
+#1 /var/www/cashflow.dev/protected/models/Params.php(24): CDbCommand->update('params', Array, 'user_id=:user_i...', Array)
+#2 /var/www/cashflow.dev/protected/controllers/ParamsController.php(24): Models\Params->updateByUserId('1', Array)
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateDate')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateDa...')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/params/updateDate
+HTTP_REFERER=http://cashflow.dev/expenses
+---
+2013/11/14 22:39:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'field list'. The SQL statement executed was: UPDATE `params` SET `0`=:0, `1`=:1, `2`=:2, `3`=:3 WHERE user_id=:user_id.
+in /var/www/cashflow.dev/protected/models/Params.php (24)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (24)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/14 22:39:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'field list'. The SQL statement executed was: UPDATE `params` SET `0`=:0, `1`=:1, `2`=:2, `3`=:3 WHERE user_id=:user_id' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(1285): CDbCommand->execute(Array)
+#1 /var/www/cashflow.dev/protected/models/Params.php(24): CDbCommand->update('params', Array, 'user_id=:user_i...', Array)
+#2 /var/www/cashflow.dev/protected/controllers/ParamsController.php(24): Models\Params->updateByUserId('1', Array)
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateDate()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateDate')
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateDa...')
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/params/updateDate
+HTTP_REFERER=http://cashflow.dev/expenses
+---
+2013/11/15 00:35:58 [error] [exception.CDbException] exception 'CDbException' with message 'The DB query must contain the "from" portion.' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:566
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(160): CDbCommand->buildQuery(Array)
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(484): CDbCommand->getText()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#3 /var/www/cashflow.dev/protected/models/Params.php(33): CDbCommand->queryRow(true)
+#4 /var/www/cashflow.dev/protected/controllers/ParamsController.php(51): Models\Params->updateExpensesFixedByUserId('Advertising', 1, '1')
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateExpensesFixed()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateExpensesF...')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateEx...')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/params/updateExpensesFixed
+HTTP_REFERER=http://cashflow.dev/budgets
+---
+2013/11/15 00:36:05 [error] [exception.CDbException] exception 'CDbException' with message 'The DB query must contain the "from" portion.' in /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php:566
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(160): CDbCommand->buildQuery(Array)
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(484): CDbCommand->getText()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#3 /var/www/cashflow.dev/protected/models/Params.php(33): CDbCommand->queryRow(true)
+#4 /var/www/cashflow.dev/protected/controllers/ParamsController.php(51): Models\Params->updateExpensesFixedByUserId('Advertising', 1, '1')
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateExpensesFixed()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): CController->run('updateExpensesF...')
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('params/updateEx...')
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/params/updateExpensesFixed
+HTTP_REFERER=http://cashflow.dev/budgets
+---
+2013/11/15 00:36:40 [error] [php] Undefined variable: id (/var/www/cashflow.dev/protected/models/Params.php:43)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateExpensesFixed
+in /var/www/cashflow.dev/protected/models/Params.php (43)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (51)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/15 00:39:49 [error] [php] json_decode() expects parameter 1 to be string, array given (/var/www/cashflow.dev/protected/models/Params.php:33)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ParamsController->actionUpdateExpensesFixed()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateExpensesFixed
+in /var/www/cashflow.dev/protected/models/Params.php (33)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (51)
+in /var/www/cashflow.dev/index.php (14)
+2013/11/15 00:48:51 [error] [php] Division by zero (/var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php:317)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php(111): Components\ExcelFormulas\BestFit\Exponential->_exponential_regression()
+#1 /var/www/cashflow.dev/protected/components/ExcelFormulas.php(23): Components\ExcelFormulas\BestFit\Exponential->__construct()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(172): Components\ExcelFormulas->calcGrowth()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(119): Components\DataBuilder\Budget\Cashflow->_calcFutureValue()
+#4 /var/www/cashflow.dev/protected/components/DataBuilder/Base.php(20): Components\DataBuilder\Budget\Cashflow->_prepareResult()
+#5 /var/www/cashflow.dev/protected/controllers/BudgetsController.php(28): Components\DataBuilder\Budget\Cashflow->build()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): BudgetsController->actionIndex()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): BudgetsController->runAction()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): BudgetsController->runActionWithFilters()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): BudgetsController->run()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/budgets
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (317)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit.php (369)
+in /var/www/cashflow.dev/protected/components/ExcelFormulas/BestFit/Exponential.php (98)
+2013/11/15 01:53:23 [error] [php] include(/var/www/cashflow.dev/protected/config/../components/DataBuilder/ExcelFormulas.php): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/vendor/yii-framework/YiiBase.php:433)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php(174): spl_autoload_call()
+#1 /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php(127): Components\DataBuilder\Expenses->_calcFutureValue()
+#2 /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php(16): Components\DataBuilder\Expenses->_prepareResult()
+#3 /var/www/cashflow.dev/protected/components/DataBuilder/Budget/Expenses.php(12): Components\DataBuilder\Expenses->build()
+#4 /var/www/cashflow.dev/protected/controllers/BudgetsController.php(24): Components\DataBuilder\Budget\Expenses->build()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): BudgetsController->actionIndex()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): BudgetsController->runAction()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): BudgetsController->runActionWithFilters()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): BudgetsController->run()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/budgets
+in /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php (174)
+in /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php (127)
+in /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php (16)
+2013/11/15 01:54:02 [error] [php] Undefined index: $ at Bank (/var/www/cashflow.dev/protected/components/DataBuilder/Cashflow.php:45)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/controllers/BudgetsController.php(28): Components\DataBuilder\Budget\Cashflow->build()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): BudgetsController->actionIndex()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): BudgetsController->runAction()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): BudgetsController->runActionWithFilters()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): BudgetsController->run()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/budgets
+in /var/www/cashflow.dev/protected/components/DataBuilder/Cashflow.php (45)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Cashflow.php (39)
+in /var/www/cashflow.dev/protected/components/DataBuilder/Budget/Cashflow.php (10)
+2013/11/15 02:17:13 [error] [php] trend(): Number of elements in coordinate arrays do not match. (/var/www/cashflow.dev/protected/components/ExcelFormulas.php:20)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php(128): Components\DataBuilder\Expenses->_calcFutureValue()
+#1 /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php(17): Components\DataBuilder\Expenses->_prepareResult()
+#2 /var/www/cashflow.dev/protected/controllers/ExpensesController.php(22): Components\DataBuilder\Expenses->build()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): ExpensesController->actionIndex()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ExpensesController->runAction()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ExpensesController->runActionWithFilters()
+#7 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ExpensesController->run()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/expenses
+in /var/www/cashflow.dev/protected/components/ExcelFormulas.php (20)
+in /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php (181)
+in /var/www/cashflow.dev/protected/components/DataBuilder/LocalStorage.php (128)
+2013/11/15 02:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 02:34:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 02:34:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 02:35:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

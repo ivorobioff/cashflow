@@ -15,10 +15,11 @@
 			    <li <?=is_location('/sales/index')? 'class="active"' : ''?>><a href="<?=$this->createUrl('/sales')?>">Sales</a></li>
 			    <li <?=is_location('/budgets/index')? 'class="active"' : ''?>><a href="<?=$this->createUrl('/budgets')?>">Budgets</a></li>
 			    </ul>
-			   
+
 			    </div>
 		    </div>
 		    <?=$content?>
   		</div>
+  		<br/><br/>
     </body>
 </html>

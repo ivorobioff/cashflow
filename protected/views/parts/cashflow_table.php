@@ -17,7 +17,20 @@
  foreach ($months as $month => $value)
  {
  ?>
- <td><?=$this->money($value)?></td>
+ <td>
+<?php
+ if ($name == '$ at Bank')
+ {
+ ?>
+<div class="budget-editable"><?=$this->money($value)?></div>
+ <?php
+ }
+ else
+ {
+ 	echo $this->money($value);
+ }
+?>
+ </td>
  <?php
  }
  ?>

@@ -57,3 +57,35 @@ tr.bld-total
 {
 	font-weight: bold;
 }
+
+#date_from, #date_to
+{
+	margin: 0;
+}
+
+.clr
+{
+	clear: both;
+}
+
+#filter input, #filter .input-append
+{
+	margin: 0;
+}
+
+.exp-fixed
+{
+	width: 90px;
+	margin: 0;
+}
+
+.budget-editable
+{
+	position: relative;
+	cursor: pointer;
+}
+
+.budget-editable:hover
+{
+	background-color: #F7F7F7;
+}

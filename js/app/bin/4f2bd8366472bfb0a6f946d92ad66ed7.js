@@ -46,6 +46,42 @@ Views.Abstract = Class.extend({
 /**
  * @load Views.Abstract
  * @load Helpers.ErrorsHandler
+ */
+Views.MiniForms = Views.Abstract.extend({
+	_id: 'mini-forms',
+	
+	initialize: function(){
+		this._render();
+				
+		this._el.find(".btn").each(function(){
+			var button = $(this);
+			var input = button.prev('input');
+			
+			button.click(function(){
+				input.attr("disabled", "disabled");
+				
+				var data = {
+						key: input.attr('name'),
+						value: input.val(), 
+				};
+				
+				post('/params/update', data, {
+					error: function(data){
+						input.removeAttr("disabled");
+						new Helpers.ErrorsHandler(data).show();
+					},
+					
+					success: function(){
+						location.reload();
+					}
+				});
+			});
+		});
+	}
+});
+/**
+ * @load Views.Abstract
+ * @load Helpers.ErrorsHandler
  * 
  */
 Views.AbstractForm = Views.Abstract.extend({
@@ -108,79 +144,6 @@ Views.AbstractForm = Views.Abstract.extend({
 	
 	_showErrors: function(data){
 		new Helpers.ErrorsHandler(data).show();
-	}
-});
-/**
- * @load Views.AbstractForm
- */
-Views.AutoRedirectForm = Views.AbstractForm.extend({
-	_redirect_url: '',
-
-	initialize: function(url){
-		this._super();
-		this._redirect_url = url;
-	},
-	
-	success: function(){
-		location.href = this._redirect_url;
-	}
-});
-/**
- * @load Views.AutoRedirectForm
- */
-Views.SigninForm = Views.AutoRedirectForm.extend({
-	_id: 'signin-form',
-	
-	success: function(res){
-		location.href = this._redirect_url;
-		/*if (res.has_freshbooks){
-			this._el.find('#action-label').show();
-			this._el.find('#inputs-container').hide();
-			
-			post('/import/update', {}, {
-				'callback': $.proxy(function(){
-					location.href = this._redirect_url;
-				}, this)
-			});
-		} else {
-			location.href = this._redirect_url;
-		}*/
-	}
-});
-/**
- * @load Views.Abstract
- * @load Helpers.ErrorsHandler
- */
-Views.MiniForms = Views.Abstract.extend({
-	_id: 'mini-forms',
-	
-	initialize: function(){
-		this._render();
-				
-		this._el.find(".btn").each(function(){
-			var button = $(this);
-			var input = button.prev('input');
-			
-			button.click(function(){
-				input.attr("disabled", "disabled");
-				
-				var data = {
-						key: input.attr('name'),
-						value: input.val(), 
-				};
-				
-				post('/params/update', data, {
-					error: function(data){
-						input.removeAttr("disabled");
-						new Helpers.ErrorsHandler(data).show();
-					},
-					
-					success: function(){
-						location.reload();
-					}
-				});
-			});
-		});
 	}
 });
 /**

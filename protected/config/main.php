@@ -7,15 +7,16 @@ return array(
 		'Components' => __DIR__.'/../components/',
 		'Models' => __DIR__.'/../models/',
 		'Helpers' => __DIR__.'/../helpers/',
+		'Extensions' => __DIR__.'/../extensions/',
 	),
-		
+
 	// preloading 'log' component
 	'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(),
 
-	
+
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		/*
@@ -35,7 +36,7 @@ return array(
 			'allowAutoLogin' => false,
 			'loginUrl'=> '/auth',
 		),
-		
+
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
@@ -43,7 +44,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		
+
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=cashflow',
 			'emulatePrepare' => true,
@@ -51,7 +52,7 @@ return array(
 			'password' => '1234',
 			'charset' => 'utf8',
 		),
-		
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'default/error',
@@ -66,7 +67,7 @@ return array(
 			),
 		),
 	),
-	
+
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
