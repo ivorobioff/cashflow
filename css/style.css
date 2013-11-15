@@ -85,7 +85,7 @@ tr.bld-total
 	cursor: pointer;
 }
 
-.budget-editable:hover
+.budget-editable:hover, .budget-active
 {
 	background-color: #F7F7F7;
 }

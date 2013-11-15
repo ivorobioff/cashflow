@@ -3,6 +3,7 @@ use Components\Controller;
 use Components\Validators\DateRangeFilter;
 use Models\Params;
 use \Components\Validators\Params as ParamsValidator;
+use Components\Validators\Budget;
 
 class ParamsController extends Controller
 {
@@ -49,6 +50,23 @@ class ParamsController extends Controller
 		$params = new Params();
 
 		$params->updateExpensesFixedByUserId($_POST['name'], intval($_POST['fixed']), \Yii::app()->user->id);
+
+		$this->ajaxSuccess();
+	}
+
+	public function actionUpdateBudget()
+	{
+		$validator = new Budget();
+
+		$error = $validator->setData($_POST)->validate()->getErrors();
+
+		if ($error)
+		{
+			return $this->ajaxError($error);
+		}
+
+		$params = new Params();
+		$params->updateBudgetUserId($_POST['date'], $_POST['amount'], \Yii::app()->user->id);
 
 		$this->ajaxSuccess();
 	}

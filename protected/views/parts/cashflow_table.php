@@ -21,8 +21,16 @@
 <?php
  if ($name == '$ at Bank')
  {
+ 	$budget_id = uniqid('budget');
  ?>
-<div class="budget-editable"><?=$this->money($value)?></div>
+<div class="budget-editable" id="<?=$budget_id?>">
+	<?=$this->money($value)?>
+	<script>
+		$(function(){
+			new Views.BudgetEditor("<?=$budget_id?>", "<?=$year?>-<?=$month?>", "<?=$value?>");
+		});
+	</script>
+</div>
  <?php
  }
  else
@@ -45,3 +53,13 @@
  <?php
  }
  ?>
+
+ <script type="text/template" id="edit-budget-dialog">
+	<div ref="{{ref}}">
+		<div class="input-append">
+		    <input class="span2" id="appendedInputButton" name="budget" value="" type="text">
+		    <button class="btn" id="change-budget" type="button"><i class="icon-ok">&nbsp;</i></button>
+			<button class="btn" id="close-popover" type="button"><i class="icon-remove">&nbsp;</i></button>
+		  </div>
+	</div>
+ </script>

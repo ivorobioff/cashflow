@@ -16,6 +16,7 @@ class Params extends Base
 		if (!$res['date_to']) $res['date_to'] = date('Y-12-31');
 
 		$res['expenses_fixed'] = json_decode(setif($res, 'expenses_fixed', '[]'), true);
+		$res['budgets'] = json_decode(setif($res, 'budgets', '[]'), true);
 
 		return $res;
 	}
@@ -31,10 +32,22 @@ class Params extends Base
 		$data = $this->getByUserId($user_id);
 
 		$expenses_fixed = $data['expenses_fixed'];
-		$expenses_fixed[$key] = intval($value);
+		$expenses_fixed[$key] = $value;
 		$expenses_fixed = json_encode($expenses_fixed);
 
 		$this->_createQuery()
 			->update('params', array('expenses_fixed' => $expenses_fixed), 'user_id=:user_id', array(':user_id' => $user_id));
+	}
+
+	public function updateBudgetUserId($date, $amount, $user_id)
+	{
+		$data = $this->getByUserId($user_id);
+
+		$budgets = $data['budgets'];
+		$budgets[$date] = $amount;
+		$budgets = json_encode($budgets);
+
+		$this->_createQuery()
+		->update('params', array('budgets' => $budgets), 'user_id=:user_id', array(':user_id' => $user_id));
 	}
 }

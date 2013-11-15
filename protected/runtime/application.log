@@ -3896,3 +3896,90 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/11/15 03:37:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 03:37:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 03:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 03:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 08:57:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 08:57:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cashflow.dev/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/11/15 11:22:37 [error] [php] file_get_contents(/var/www/cashflow.dev/protected/config/../../js/app/Helpers/BudgetClicker.js): failed to open stream: No such file or directory (/var/www/cashflow.dev/protected/components/JsComposer.php:135)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/components/JsComposer.php(102): Components\JsComposer->_loadClasses()
+#1 /var/www/cashflow.dev/protected/components/JsComposer.php(45): Components\JsComposer->_loadClasses()
+#2 /var/www/cashflow.dev/protected/globals.php(74): Components\JsComposer->process()
+#3 /var/www/cashflow.dev/protected/views/parts/head.php(15): load_js()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CBaseController.php(126): require()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CBaseController.php(95): BudgetsController->renderInternal()
+#6 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(869): BudgetsController->renderFile()
+#7 /var/www/cashflow.dev/protected/views/layouts/main.php(4): BudgetsController->renderPartial()
+#8 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CBaseController.php(126): require()
+#9 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CBaseController.php(95): BudgetsController->renderInternal()
+#10 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(784): BudgetsController->renderFile()
+#11 /var/www/cashflow.dev/protected/controllers/BudgetsController.php(36): BudgetsController->render()
+#12 /var/www/cashflow.dev/protected/vendor/yii-framework/web/actions/CInlineAction.php(49): BudgetsController->actionIndex()
+#13 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): BudgetsController->runAction()
+#15 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): BudgetsController->runActionWithFilters()
+#16 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): BudgetsController->run()
+#17 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/budgets
+in /var/www/cashflow.dev/protected/components/JsComposer.php (135)
+in /var/www/cashflow.dev/protected/components/JsComposer.php (97)
+in /var/www/cashflow.dev/protected/components/JsComposer.php (102)
+2013/11/15 12:52:27 [error] [php] Argument 1 passed to Components\Controller::ajaxError() must be an array, string given, called in /var/www/cashflow.dev/protected/controllers/ParamsController.php on line 58 and defined (/var/www/cashflow.dev/protected/components/Controller.php:34)
+Stack trace:
+#0 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(286): ParamsController->runAction()
+#2 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CController.php(265): ParamsController->runActionWithFilters()
+#3 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(282): ParamsController->run()
+#4 /var/www/cashflow.dev/protected/vendor/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/cashflow.dev/protected/vendor/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/cashflow.dev/index.php(14): CWebApplication->run()
+REQUEST_URI=/params/updateBudget
+in /var/www/cashflow.dev/protected/components/Controller.php (34)
+in /var/www/cashflow.dev/protected/controllers/ParamsController.php (58)
+in /var/www/cashflow.dev/index.php (14)
