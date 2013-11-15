@@ -3,6 +3,7 @@ namespace Components\DataBuilder;
 use Components\DataBuilder\Base;
 use Models\Import\Expenses as ExpensesModel;
 use Components\ExcelFormulas;
+use Helpers\Basic as BasicHelper;
 
 abstract class LocalStorage extends Base
 {
@@ -105,6 +106,8 @@ abstract class LocalStorage extends Base
 		$absolute_future_month = 0;
 		$absolute_past_month = 0;
 
+		$helper = new BasicHelper();
+
 		foreach ($skeleton as $year => $names)
 		{
 			foreach ($names as $name => $months)
@@ -114,7 +117,7 @@ abstract class LocalStorage extends Base
 
 				foreach ($months as $month => $value)
 				{
-					if (!$this->_isFuture($year, $month))
+					if (!$helper->isFuture($year, $month))
 					{
 						$apm ++;
 						$new_value = setif(setif(setif($data, $year, array()), $name, array()), $month, 0);
@@ -182,17 +185,6 @@ abstract class LocalStorage extends Base
 		}
 
 		return setif($this->_cache_growth[$name], $absolute_future_month - 1, 0);
-	}
-
-	private function _isFuture($year, $month)
-	{
-		$current_year = date('Y');
-		$current_month = intval(date('m'));
-
-		if ($year > $current_year) return true;
-		if ($year == $current_year && $month >= $current_month) return true;
-
-		return false;
 	}
 
 	/**

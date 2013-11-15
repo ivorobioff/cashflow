@@ -42,17 +42,56 @@
 
 	</table>
 </div>
+<?php if ($expenses_data){?>
+<h4 style="text-align: left;">Revised Expenses</h4>
  <?=$this->renderPartial('//parts/table', array(
  		'data' => $expenses_data,
  		'summary_data' => $expenses_summary_data,
  		'show_expenses_fixed' => true
  ));?>
+<?php if ($this->isAllowedShowCharts()){?>
+ <table style="width: 100%;">
+ 	<tr>
+ 		<td style="width: 50%;">
+			<div>
+			<?=$this->renderPartial('//parts/chart', array(
+			 	'chart_data' => $current_expenses_chart_data,
+			 	'type' => 'column',
+			 	'title' => 'Current budget incl Forecast',
+			 	'id' => 'current-expenses',
+			 ))?>
+			 </div>
+ 		</td>
+ 		<td>
+ 			<div>
+ 			 <?=$this->renderPartial('//parts/chart', array(
+			 	'chart_data' => $expenses_chart_data,
+			 	'type' => 'column',
+			 	'title' => 'Revised budget incl Forecast',
+			 	'id' => 'revised-expenses',
+			 ))?>
+			 </div>
+ 		</td>
+ 	</tr>
+ </table>
+ <?php }?>
  <br/>
- <hr/>
+ <?php }?>
+<h4 style="text-align: left;">Revised Cash Flow</h4>
   <?=$this->renderPartial('//parts/cashflow_table', array(
  		'data' => $cashflow_data,
  		'summary_data' => $cashflow_summary_data
  ));?>
+
+  <?php
+if ($this->isAllowedShowCharts())
+{
+  	echo $this->renderPartial('//parts/chart', array(
+ 	'chart_data' => $cashflow_chart_data,
+ 	'type' => 'column',
+ 	'title' => 'Revised Cash Flow'
+ ));
+}?>
  </div>
 
   <script>

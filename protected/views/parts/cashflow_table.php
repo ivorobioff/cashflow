@@ -19,7 +19,7 @@
  ?>
  <td>
 <?php
- if ($name == '$ at Bank')
+ if ($name == '$ at Bank' && !$this->isFuture($year, $month))
  {
  	$budget_id = uniqid('budget');
  ?>

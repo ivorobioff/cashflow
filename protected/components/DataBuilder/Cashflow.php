@@ -74,6 +74,16 @@ class Cashflow extends Base
 		return $res;
 	}
 
+	public function buildChartData(array $data)
+	{
+		foreach ($data as $year => $names)
+		{
+			unset($data[$year]['Total']);
+		}
+
+		return $this->_buildData4Chart($data);
+	}
+
 	private function _buildResultByLookups($config)
 	{
 		$result = array();

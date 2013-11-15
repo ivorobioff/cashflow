@@ -34,4 +34,16 @@ class Expenses extends Base implements LocalStorage
 			->andWhere('user_id=:user_id', array(':user_id' => $id))
 			->queryAll(true);
 	}
+
+	public function getFirstDate($user_id)
+	{
+		$data = $this->_createQuery()
+			->from('expenses')
+			->where('user_id=:user_id', array(':user_id' => $user_id))
+			->order('date ASC')
+			->queryRow(true);
+
+		if (!$data) return false;
+		return $data['date'];
+	}
 }

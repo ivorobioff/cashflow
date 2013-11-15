@@ -13,10 +13,16 @@
     </div>
 	</div>
 </div>
-
  <?=$this->renderPartial('//parts/cashflow_table', array('data' => $data, 'summary_data' => $summary_data));?>
+ <?=$this->renderPartial('//parts/chart', array(
+ 	'chart_data' => $chart_data,
+ 	'type' => 'column',
+ 	'title' => 'Cashflow Forecast'
+ ))?>
+
  </div>
- <script>
+
+<script>
 $(function(){
 	new Views.MiniForms();
 });

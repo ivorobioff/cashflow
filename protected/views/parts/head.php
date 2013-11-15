@@ -7,6 +7,7 @@
     	<link href="<?=Yii::app()->request->baseUrl?>/css/datepicker.css" rel="stylesheet" media="screen">
 
     	<script src="<?=Yii::app()->request->baseUrl?>/js/jquery.js"></script>
+    	<script src="<?=Yii::app()->request->baseUrl?>/js/highstock.js"></script>
     	<script src="<?=Yii::app()->request->baseUrl?>/js/underscore-min.js"></script>
     	<script src="<?=Yii::app()->request->baseUrl?>/js/bootstrap.min.js"></script>
     	<script src="<?=Yii::app()->request->baseUrl?>/js/bootstrap-datepicker.js"></script>

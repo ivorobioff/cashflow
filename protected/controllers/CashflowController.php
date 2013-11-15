@@ -15,14 +15,15 @@ class CashflowController extends Controller
 			return $this->redirect($this->createUrl('/import'));
 		}
 
-		$params_model = new Params();
-		$params = $params_model->getByUserId(\Yii::app()->user->id);
-
-		$builder = new Cashflow($params);
+		$builder = new Cashflow($this->getParams());
 		$data = $builder->build();
-
 		$summary_data = $builder->buildSummary($data);
+		$chart_data = $builder->buildChartData($data);
 
-		$this->render('//contents/cashflow', array('data' => $data, 'summary_data' => $summary_data));
+		$this->render('//contents/cashflow', array(
+			'data' => $data,
+			'summary_data' => $summary_data,
+			'chart_data' => $chart_data,
+		));
 	}
 }

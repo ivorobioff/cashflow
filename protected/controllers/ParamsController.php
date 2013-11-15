@@ -49,7 +49,12 @@ class ParamsController extends Controller
 	{
 		$params = new Params();
 
-		$params->updateExpensesFixedByUserId($_POST['name'], intval($_POST['fixed']), \Yii::app()->user->id);
+		$data = $this->getParams();
+		$expenses_fixed = $data['expenses_fixed'];
+		$expenses_fixed[$_POST['name']] = intval($_POST['fixed']);
+		$expenses_fixed = json_encode($expenses_fixed);
+
+		$params->updateExpensesFixedByUserId($expenses_fixed, \Yii::app()->user->id);
 
 		$this->ajaxSuccess();
 	}
@@ -66,7 +71,13 @@ class ParamsController extends Controller
 		}
 
 		$params = new Params();
-		$params->updateBudgetUserId($_POST['date'], $_POST['amount'], \Yii::app()->user->id);
+
+		$data = $this->getParams();
+		$budgets = $data['budgets'];
+		$budgets[$_POST['date']] = $_POST['amount'];
+		$budgets = json_encode($budgets);
+
+		$params->updateBudgetUserId($budgets, \Yii::app()->user->id);
 
 		$this->ajaxSuccess();
 	}

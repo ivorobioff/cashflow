@@ -20,6 +20,11 @@ class Cashflow extends CashflowBuilder
 		return $result;
 	}
 
+	public function buildChartData(array $data)
+	{
+		return $this->_buildData4Chart($data);
+	}
+
 	protected function _createExpensesBuilder()
 	{
 		return new Expenses($this->_params);
